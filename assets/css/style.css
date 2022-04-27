@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("/assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    background-color: #131313;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3%;
+}
+
+.welcome{
+    margin: 25px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.parent #logo {
+    transition: all 1.0s;
+    margin-top: 30px;
+    left: 50%;
+    filter: drop-shadow(6px 3px 3px #06CF65);
+    height: 50px;
+}
+
+.parent #logo2 {
+  margin-top: 30px;
+  left: 50%;
+  height: 50px;
+}
+
+.parent #logo:hover{
+  transform: scale(1) rotate(360deg);
+}
+
+.parent #logo:hover {
+    opacity: 0.8;
+}
+
+.parent h1 {
+    margin-top: 10px;
+    position: relative;
+    color: #f5f5f5;
+}
+
+.parent span{
+  color: #adadad;
+}
+
+.parent .welcome span{
+ margin-top: 15px;
+}
+
+
+  input[type=checkbox] {
+    cursor: pointer;
+    border-color: #212121;
+    background-color: #212121;
+    accent-color: #0be571;
+    height: 20px; /* not needed */
+    width: 20px; /* not needed */
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0%, 170%);
+}
+.btn {
+    margin-top: 20px;
+    padding: 1%;
+    font-size: 14px;
+    width: 200px;
+    background-color: #5d69f4;
+    color: #fff;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    transition: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.btn:hover {
+    width: 225px;
+    background-color: #4c59e9;
+    cursor: pointer;
+}
+
+.btn span {
+    color: #fff;
+    position: relative;
+}
+
+.btn img {
+    padding: 10px;
+    height: 25px;
+    transition: all 1.0s;
+}
+
+.btn:hover > img{
+  transform: scale(1) rotate(360deg);
+}
+
+a{
+    text-decoration: none;
+    color: #7983ef;
+}
+  
+  .cbx {
+      font-size: 12px;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer; }
+    .cbx span {
+      display: inline-block;
+      vertical-align: middle;
+      transform: translate3d(0, 0, 0); }
+      .cbx span:first-child {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        transform: scale(0.8);
+        vertical-align: middle;
+        border: 1px solid #B9B8C3;
+        transition: all .2s ease; }
+        .cbx span:first-child svg {
+          position: absolute;
+          z-index: 1;
+          top: 8px;
+          left: 6px;
+          fill: none;
+          stroke: white;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 16px;
+          stroke-dashoffset: 16px;
+          transition: all .3s ease;
+          transition-delay: .1s;
+          transform: translate3d(0, 0, 0); }
+        .cbx span:first-child:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: #0be571;
+          display: block;
+          transform: scale(0);
+          opacity: 1;
+          border-radius: 50%;
+          transition-delay: .2s; }
+      .cbx span:last-child {
+        margin-left: 8px; }
+  
+  .inp-cbx:checked + .cbx span:first-child {
+    border-color: #0be571;
+    background: #0be571;
+    animation: check .6s ease; }
+    .inp-cbx:checked + .cbx span:first-child svg {
+      stroke-dashoffset: 0; }
+    .inp-cbx:checked + .cbx span:first-child:before {
+      transform: scale(2.2);
+      opacity: 0;
+      transition: all .6s ease; }
+  
+  .inp-cbx:checked + .cbx span:last-child {
+    color: #B9B8C3;
+    transition: all .3s ease; }
+    .inp-cbx:checked + .cbx span:last-child:after {
+      transform: scaleX(1);
+      transition: all .3s ease; }
+  
+  @keyframes check {
+    50% {
+      transform: scale(1.2); } }
+  

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [L]
+
+php_flag session.cookie_secure On
+php_flag session.cookie_httponly On
